@@ -1,0 +1,69 @@
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "a a a a"
+        "b b b b"
+        "c d d d"
+        "e e e e";
+}
+
+
+
+header {
+    grid-area: a;
+    background-color: rgb(248, 241, 185);
+    color: rgb(0, 150, 150);
+}
+
+nav {
+    grid-area: b;
+    background-color: rgb(225, 0, 255);
+}
+
+aside {
+    grid-area: c;
+    background-color: rgb(73, 70, 79);
+}
+
+main {
+    grid-area: d;
+    background-color: rgb(252, 236, 236);
+}
+.cuestionario{
+    color: rgb(10, 9, 10);
+    text-decoration: none;
+}
+
+footer {
+    grid-area: e;
+    background-color: rgb(96, 96, 96);
+    color: azure;
+}
+.menu_horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+
+}
+.menu_horizontal a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.menu_vertical{
+    list-style: none;
+    padding: 4px;
+    
+}
+.menu_vertical a{
+    text-decoration: none;
+    padding: 0,9px 0px ;
+    margin: 5px;
+    background-color: rgb(13, 13, 13);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+}
+.centrado {
+text-align:center;
+}

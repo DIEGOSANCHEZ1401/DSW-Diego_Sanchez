@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+    <link rel="stylesheet" href="fase4.css">
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+</head>
+<body class="contenedor">
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+
+    <header class="encabezado">
+        <h1 class="centrado">Bienvenidos al curso<br>Diseño de Sitio Web html y css
+            <img src="img/htmlcss.jpg" alt=" html y css ">
+        </h1> 
+        <!-- encabezado del tema -->
+    </header>
+    <nav class="navbar navbar-expand-lg navbar bg-body-tertiary">
+        <div class="container-fluid " >
+            <img src="img/logo2.png" alt=" logo  " width="300px">
+          <a class="navbar-brand" href="indexfase4.html"><h4>Inicio</h4></a>
+          <a class="navbar-brand" href="audios.html"><h4>Audios</h4></a>
+          <a class="navbar-brand" href="equipos.html"><h4>Equipos</h4></a>
+          <a class="navbar-brand" href="cuestionario.html"><h4>Cuestionario</h4></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="temas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <h5>Temas</h5>
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="nosotros.html"><h5>Selectores CSS</h5></a></li>
+                <li><a class="dropdown-item" href=""><h5>Box model</h5></a></li>
+                <li><a class="dropdown-item" href="#"><h5>Media queries</h5></a></li>
+                <li><a class="dropdown-item" href="temas.html"><h5>Flex Box</h5></a></li>
+                <li><a class="dropdown-item" href="#"><h5>CSS Grid.</h5></a></li>
+                </ul>
+                
+            </li>
+            </ul>
+            <img src="img/logo2.png" alt=" logo  " width="300px">
+      </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+        </div>
+      </nav>
+    <aside class="centrado">
+        <ul class="menu_vertical">
+
+            <li><a href="indexfase4.html"><h2>Inicio</h2></a></li>
+            <li><a href="audios.html"><h2>Audios</h2></a></li>
+            <li><a href="temas.html"><h2>Temas</h2></a></li>
+            <li><a href="nosotros.html"><h2>Nosotros</h2></a></li>
+            <li><a href="cuestionario.html"><h2>Cuestionario</h2></a></li>
+
+        </ul>
+        <!-- menu lateral -->
+    </aside>
+    <main>
+        <h1 id= "resultado" > Responda el siguiente Cuestionario </h1>
+        <div>
+            <form  name="formulario">
+
+                <h3>Los media queries, se implementan en:</h3>
+
+                <input type="radio" name="r1"value="a"> a. una variable <br>
+                <input type="radio" name="r1"value="b"> b. Css <br>
+                <input type="radio" name="r1"value="c"> c. en una concatenacion <br>
+
+                <h3>Que es un media queries :</h3>
+
+                <input type="radio" name="r2"value="a"> a. operador aritmetico   <br>
+                <input type="radio" name="r2"value="b"> b. conjunto de reglas htlm que se ejecutan para condicionar una variable: <br>
+                <input type="radio" name="r2"value="c"> c. conjunto de reglas CSS que se ejecutan para unas condiciones específicas de la pantalla (tamaño, resolución, orientación) <br>
+
+                <h3>Cual de los siguentes no hace parte de los tipos de medio de media queries:</h3>
+
+                <input type="radio" name="r3"value="a"> a. let <br>
+                <input type="radio" name="r3"value="b"> b. screen <br>
+                <input type="radio" name="r3"value="c"> c. speech  <br>
+
+                <h3>Cual de las siguientes no es una condicion de media querie:</h3>
+
+                <input type="radio" name="r4"value="a"> a. max-dir  <br>
+                <input type="radio" name="r4"value="b"> b. height <br>
+                <input type="radio" name="r4"value="b"> c. width  <br>
+
+                <h3>¿Cuando uso el medio speech me refiero a:</h3>
+                
+                <input type="radio" name="r5"value="a"> a. Presentación del contenido de una página web en una pantalla táctil<br>
+                <input type="radio" name="r5"value="b"> b. Lectura en voz alta del contenido de una página web mediante un sintetizador de habla <br>
+                <input type="radio" name="r5"value="c"> c. Cualquier medio de salida <br>
+
+            <input type="button" value="Enviar Respuestas" onclick = " procesarRespuestas()">
+            </form>
+        </div>
+<script src="js/script.js"></script>
+
+
+        <!-- contenido principal -->
+    </main>
+    <footer class="centrado">
+        Skype:diegosh140128 <br>
+        Correo: diegosh140128@gmail.com <br><br><br>
+        Celular: 3134599560
+    </footer>
+
+</body>
+</html>
